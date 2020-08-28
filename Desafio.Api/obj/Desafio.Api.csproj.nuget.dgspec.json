@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj": {}
+    "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj": {}
   },
   "projects": {
-    "D:\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj": {
+    "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
         "projectName": "Desafio.Api",
-        "projectPath": "D:\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
-        "packagesPath": "C:\\Users\\Desenv_02\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudos\\iterup\\Desafio.Api\\obj\\",
+        "projectPath": "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
+        "packagesPath": "C:\\Users\\Crisitano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Desenv_02\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Crisitano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -42,6 +38,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[*, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[3.1.7, )"
@@ -65,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
