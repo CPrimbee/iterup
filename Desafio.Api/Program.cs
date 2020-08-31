@@ -37,7 +37,7 @@ namespace Desafio.Api
             {
                 try
                 {
-                    SeedData.Initialize(context);
+                    // SeedData.Initialize(context);
                 }
                 catch (Exception ex)
                 {

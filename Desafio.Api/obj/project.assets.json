@@ -5080,25 +5080,30 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.AspNetCore.Authentication >= 2.2.0",
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= *",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.7",
       "Microsoft.EntityFrameworkCore.InMemory >= 3.1.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Crisitano\\.nuget\\packages\\": {}
+    "C:\\Users\\Desenv_02\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
+      "projectUniqueName": "D:\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
       "projectName": "Desafio.Api",
-      "projectPath": "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
-      "packagesPath": "C:\\Users\\Crisitano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Crisitano\\Documents\\Estudos\\iterup\\Desafio.Api\\obj\\",
+      "projectPath": "D:\\Estudos\\iterup\\Desafio.Api\\Desafio.Api.csproj",
+      "packagesPath": "C:\\Users\\Desenv_02\\.nuget\\packages\\",
+      "outputPath": "D:\\Estudos\\iterup\\Desafio.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Crisitano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Desenv_02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5127,7 +5132,7 @@
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[3.1.7, )"
           },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
