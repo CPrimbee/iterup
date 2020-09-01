@@ -40,6 +40,30 @@ namespace Desafio.Api.Controllers
             };
         }
 
+        [HttpGet("workflow")]
+        [AllowAnonymous]
+        public ActionResult<dynamic> GetWorkflow()
+        {
+            var workflow = _context.Etapas
+                    .OrderBy(x => x.NumEtapa)
+                    .Select(x => new {
+                        x.NumEtapa,
+                        TipoEtapa = x.TipoEtapa == 0 ? "Pergunta" : "Diálogo",
+                        x.TextoEtapa,
+                        x.NumProxEtapa,
+                        Respostas = _context.Respostas
+                            .Where(y => y.NumEtapa == x.NumEtapa)
+                            .Select(y => new {
+                                y.NumResposta,
+                                y.NumEtapa,
+                                y.Legenda,
+                                y.NumProxEtapa
+                            }).ToList()
+                    }).ToList();
+
+            return workflow;
+        }
+
         #region Etapas
         [HttpGet("etapas")]
         [Authorize]

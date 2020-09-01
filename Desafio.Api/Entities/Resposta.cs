@@ -8,7 +8,6 @@ namespace Desafio.Api.Entities
     {
         public Resposta()
         {
-            ValidarEtapa();
         }
         
         #region "Propriedades"
@@ -22,27 +21,11 @@ namespace Desafio.Api.Entities
         public string Legenda { get; set; }
 
         [Range(minimum: 1, maximum: (int) Int32.MaxValue)]
-        public int NumProxEtapa { get; set; }
+        public int? NumProxEtapa { get; set; }
         #endregion
 
         #region "Navegação"
         public virtual Etapa FK_Etapa { get; set; }
-        #endregion      
-
-        private bool ValidarEtapa()
-        {
-            if (NumEtapa > 0)
-                return true;
-                
-            return false;
-        }
-
-        private bool ValidarProxEtapa()
-        {
-            if (NumProxEtapa > 0)
-                return true;
-            
-            return false;
-        }
+        #endregion
     }
 }

@@ -9,8 +9,7 @@ namespace Desafio.Api.Data
         public static User Get(string username, string password)
         {
             var users = new List<User>();
-            users.Add(new User { Id = 1, Username = "batman", Password = "batman", Role="manager" });
-            users.Add(new User { Id = 2, Username = "robin", Password = "robin", Role="employee" });
+            users.Add(new User { Id = 1, Username = "desafio", Password = "desafio", Role="manager" });
             return users.Where(x => x.Username.ToLower() == username.ToLower() && x.Password == password).FirstOrDefault();
         }
     }

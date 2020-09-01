@@ -1,18 +1,22 @@
-<div>
-    <h3>Workflow</h3>
-</div>
-
-<mat-card *ngFor="let etapa of dataSource">
+<div
+  class="workflow-card"
+  [dataSource]="dataSource"
+  *ngFor="let etapa of dataSource"
+>
+  <mat-card class="card">
     <mat-card-header>
-        <mat-card-title><strong>Etapa {{etapa.numEtapa}}</strong> - {{etapa.tipoEtapa}}:</mat-card-title>
-        <mat-card-subtitle>{{etapa.textoEtapa}}</mat-card-subtitle>
+      <mat-card-title><strong>Etapa {{ etapa.numEtapa }}</strong> - {{ etapa.tipoEtapa }}:</mat-card-title>
+      <mat-card-subtitle>{{ etapa.textoEtapa }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        <div *ngIf="etapa.respostas.length">
-            <p *ngFor="let resposta of etapa.respostas">{{resposta.numResposta}}-{{resposta.legenda}}-vai para etapa {{resposta.numProxEtapa}}</p>
-        </div>
-        <div *ngElse>
-            <p>vai para etapa {{etapa.numProxEtapa}}
-        </div>
+      <div *ngIf="etapa.respostas.length">
+        <p *ngFor="let resposta of etapa.respostas">
+          {{ resposta.legenda }}-Vai para etapa {{ resposta.numProxEtapa }}
+        </p>
+      </div>
+      <div *ngIf="etapa.numProxEtapa">
+        <p>Vai para etapa {{ etapa.numProxEtapa }}</p>
+      </div>
     </mat-card-content>
-</mat-card>
+  </mat-card>
+</div>

@@ -1,0 +1,9 @@
+.workflow-card {
+  display: inline-flex;
+  padding: 5px;
+}
+
+.card {
+  max-width: 200px;
+  justify-content: space-between;
+}

@@ -1,9 +1,9 @@
 import { Resposta } from '../model/resposta';
 
 export class Etapa {
-  _numEtapa: number;
-  _textoEtapa: string;
-  _numProxEtapa: number;
-  _repostas: Resposta[];
-  _tipoEtapa: string;
+  numEtapa: number;
+  textoEtapa: string;
+  numProxEtapa: number;
+  repostas: Resposta[];
+  tipoEtapa: string;
 }

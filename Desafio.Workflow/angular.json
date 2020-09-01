@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "Desafio-Workflow"
+  "defaultProject": "Desafio-Workflow",
+  "cli": {
+    "analytics": "a8393bd5-cb47-41d0-a05f-43325c81d59a"
+  }
 }

@@ -10,9 +10,9 @@ import { Etapa } from 'src/model/etapa';
 import { Resposta } from 'src/model/resposta';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
-const apiUrl = 'http://localhost:5000/desafio';
+const apiUrl = 'https://localhost:5001/desafio';
 
 @Injectable({
   providedIn: 'root',
@@ -20,11 +20,10 @@ const apiUrl = 'http://localhost:5000/desafio';
 export class ApiService {
   constructor(private http: HttpClient) {}
 
-  getEtapas(): Observable<Etapa[]> {
+  getWorkflow() {
     const url = `${apiUrl}/workflow`;
-    return this.http.get<Etapa[]>(url).pipe(
-      tap((etapas) => console.log('leu as etapas')),
-      catchError(this.handleError('getEtapas', []))
+    return this.http.get(url).pipe(
+      catchError(this.handleError('getWorkflow', []))
     );
   }
 

@@ -1,6 +1,6 @@
 export class Resposta{
-    _numResposta: number;
-    _numEtapa: number;
-    _legenda: string;
-    _numProxEtapa: number;
+    numResposta: number;
+    numEtapa: number;
+    legenda: string;
+    numProxEtapa: number;
 }

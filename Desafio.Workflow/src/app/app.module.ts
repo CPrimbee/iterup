@@ -19,6 +19,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent, EtapasComponent, MenuComponent],
   imports: [
@@ -36,6 +38,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTableModule,
     MatToolbarModule,
     LayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
