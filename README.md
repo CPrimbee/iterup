@@ -62,6 +62,7 @@
 ## EXECUTANDO FRONT
 
 - Dentro da pasta Desafio.Workflow
+  Antes de tudo instalar as dependência
   ```
   ng serve
   ```
