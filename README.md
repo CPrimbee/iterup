@@ -62,7 +62,12 @@
 ## EXECUTANDO FRONT
 
 - Dentro da pasta Desafio.Workflow
+
   Antes de tudo instalar as dependência
+  ```
+  npm install
+  ```
+  Depois executar o _serve_
   ```
   ng serve
   ```
